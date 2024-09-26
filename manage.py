@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+from django.core.wsgi import get_wsgi_application
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'todo_list.settings')
@@ -16,6 +16,9 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
-
 if __name__ == '__main__':
     main()
+
+# Define the handler for Vercel
+app = get_wsgi_application()
+handler = app
