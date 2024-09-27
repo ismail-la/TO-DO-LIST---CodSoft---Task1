@@ -12,8 +12,9 @@
       "dest": "manage.py"
     }
   ],
-  "buildCommand": "python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt && python manage.py collectstatic --noinput",
   "env": {
-    "DJANGO_SETTINGS_MODULE": "todo_list.settings"
-  }
+    "DJANGO_SETTINGS_MODULE": "todo_list.settings",
+    "PYTHON_VERSION": "3.12"
+  },
+  "buildCommand": "python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt && python manage.py collectstatic --noinput"
 }
