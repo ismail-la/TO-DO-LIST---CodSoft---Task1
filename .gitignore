@@ -150,5 +150,9 @@ Thumbs.db #thumbnail cache on Windows
 
 # profiling data
 .prof
+<<<<<<< HEAD
 
 .vercel
+=======
+.vercel
+>>>>>>> 8cb84c2402f92818eb153fea75999f3c7fe8b0c4
