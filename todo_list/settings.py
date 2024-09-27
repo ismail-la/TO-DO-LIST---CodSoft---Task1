@@ -76,10 +76,15 @@ WSGI_APPLICATION = 'todo_list.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        'NAME': 'db-ismail',  # Replace with your database name
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            'host': 'mongodb+srv://lahbariismail:uPojUDlI9MrhndmN@cluster0.e2njo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'  # Replace with your connection string
+        } 
     }
 }
+
 
 
 # Password validation

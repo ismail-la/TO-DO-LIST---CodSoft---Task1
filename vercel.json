@@ -14,7 +14,7 @@
   ],
   "env": {
     "DJANGO_SETTINGS_MODULE": "todo_list.settings",
-    "PYTHON_VERSION": "3.12"
+    "DATABASE_URL": "your_database_connection_string"
   },
   "buildCommand": "python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt && python manage.py collectstatic --noinput"
 }
